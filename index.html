@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apna Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>APNA SALON</h2>
+
+        <button id="menuBtn">☰</button>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <div class="hero-text">
+
+            <p class="welcome">WELCOME TO APNA SALON</p>
+
+            <h1>Look stylish.<br>Feel handsome.</h1>
+
+            <p>
+                Discover your style with professional
+                beauty and hair care services.
+            </p>
+
+            <button id="appointmentBtn">Book Appointment</button>
+
+            <form id="appointmentForm">
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone"
+                    required
+                >
+
+                <label for="service">Choose Service</label>
+
+                <select id="service" required>
+
+                    <option value="">Select a service</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Hair Styling">Hair Styling</option>
+                    <option value="Facial">Facial</option>
+                    <option value="Manicure">Manicure</option>
+                    <option value="Hair Spa">Hair Spa</option>
+
+                </select>
+
+                <button type="submit">Submit Appointment</button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+                alt="Modern salon interior"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                    alt="Apna Salon interior"
+                >
+
+            </div>
+
+
+            <div class="about-text">
+
+                <p class="welcome">ABOUT APNA SALON</p>
+
+                <h2>Style That Makes You Feel Confident</h2>
+
+                <p>
+                    Apna Salon is a modern beauty and hair salon
+                    dedicated to helping you look and feel your best.
+                </p>
+
+                <p>
+                    Our team focuses on quality service, modern
+                    styles and a comfortable salon experience.
+                </p>
+
+                <ul>
+
+                    <li>Expert and friendly team</li>
+
+                    <li>Professional beauty services</li>
+
+                    <li>Modern styling techniques</li>
+
+                    <li>Comfortable salon environment</li>
+
+                    <li>Affordable pricing</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <p>
+            Professional beauty services for your style and confidence.
+        </p>
+
+
+        <div class="services-container">
+
+            <!-- Haircut -->
+            <div class="service-card">
+
+                <h3>Haircut</h3>
+
+                <p>
+                    Professional haircut and styling
+                    for a fresh new look.
+                </p>
+
+                <h4>₹299</h4>
+
+            </div>
+
+
+            <!-- Hair Styling -->
+            <div class="service-card">
+
+                <h3>Hair Styling</h3>
+
+                <p>
+                    Modern styling for parties,
+                    events and special occasions.
+                </p>
+
+                <h4>₹499</h4>
+
+            </div>
+
+
+            <!-- Facial -->
+            <div class="service-card">
+
+                <h3>Facial</h3>
+
+                <p>
+                    Relaxing facial treatment
+                    for healthy and glowing skin.
+                </p>
+
+                <h4>₹399</h4>
+
+            </div>
+
+
+            <!-- Manicure -->
+            <div class="service-card">
+
+                <h3>Manicure</h3>
+
+                <p>
+                    Professional nail care
+                    for clean and beautiful hands.
+                </p>
+
+                <h4>₹299</h4>
+
+            </div>
+
+
+            <!-- Beard Styling -->
+            <div class="service-card">
+
+                <h3>Beard Styling</h3>
+
+                <p>
+                    Professional beard trimming
+                    and styling.
+                </p>
+
+                <h4>₹199</h4>
+
+            </div>
+
+
+            <!-- Hair Spa -->
+            <div class="service-card">
+
+                <h3>Hair Spa</h3>
+
+                <p>
+                    Relaxing hair spa treatment
+                    for healthier and smoother hair.
+                </p>
+
+                <h4>₹501</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+
+        <h2>Our Gallery</h2>
+
+        <p>
+            Take a look at our salon and our work.
+        </p>
+
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80"
+                    alt="Modern salon"
+                >
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+                    alt="Salon interior"
+                >
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=800&q=80"
+                    alt="Hair styling"
+                >
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+                    alt="Hair salon"
+                >
+            </div>
+
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80"
+                    alt="Salon service"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            We would love to hear from you.
+        </p>
+
+
+        <div class="contact-container">
+
+            <div class="contact-box">
+
+                <h3>📞 Phone</h3>
+
+                <p>9876543210</p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>📧 Email</h3>
+
+                <p>apnasalon@gmail.com</p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>📍 Location</h3>
+
+                <p>Patna, Bihar</p>
+
+            </div>
+
+        </div>
+
+
+        <a class="contact-button"
+   href="https://www.instagram.com/sm_rty_018/"
+   target="_blank">
+    Follow us on Instagram
+    </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>APNA SALON</h3>
+
+        <p>
+            Look Good. Feel Confident.
+        </p>
+
+        <p>
+            © 2026 Apna Salon. All Rights Reserved.
+        </p>
+
+        <p>
+            Follow us on Instagram
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <button id="backToTop">↑</button>
+
+</body>
+
+</html>

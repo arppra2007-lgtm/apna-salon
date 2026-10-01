@@ -1,0 +1,823 @@
+/* ==================================================
+   APNA SALON - COMPLETE STYLE SHEET
+   Day 1 - Day 17
+================================================== */
+
+
+/* ==================================================
+   1. GENERAL / RESET
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222;
+    background-color: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   2. NAVIGATION
+================================================== */
+
+nav {
+    background-color: #2b163d;
+
+    padding: 20px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+
+    margin: 0 30px 0 0;
+
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    padding: 5px 0;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation Hover */
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   3. MOBILE MENU BUTTON
+================================================== */
+
+#menuBtn {
+    display: none;
+
+    background-color: transparent;
+
+    color: white;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+/* ==================================================
+   4. COMMON SECTION
+================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   5. HOME / HERO
+================================================== */
+
+#home {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 35px;
+
+    background-color: #faf7fc;
+}
+
+.hero-text {
+    flex: 0 0 52%;
+
+    max-width: 600px;
+}
+
+.welcome {
+    color: #7a3f91;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    margin: 15px 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==================================================
+   6. GENERAL BUTTON
+================================================== */
+
+button {
+    padding: 13px 24px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2b163d;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   7. APPOINTMENT FORM
+================================================== */
+
+#appointmentForm {
+
+    max-width: 450px;
+    margin-top: 20px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+#appointmentForm label {
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+#appointmentForm input,
+#appointmentForm select {
+    width: 100%;
+
+    padding: 9px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+#appointmentForm input:focus,
+#appointmentForm select:focus {
+    border-color: #7a3f91;
+}
+
+#appointmentForm button {
+    margin-top: 15px;
+}
+
+
+/* ==================================================
+   8. FORM MESSAGE
+================================================== */
+
+#formMessage {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    line-height: 1.8;
+}
+
+.success-message {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background-color: #d4edda;
+
+    color: #155724;
+}
+
+
+/* ==================================================
+   9. ABOUT SECTION
+================================================== */
+
+#about {
+    background-color: white;
+}
+
+.about-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+.about-text p {
+    color: #555;
+}
+
+.about-text ul {
+    padding-left: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+
+/* ==================================================
+   10. SERVICES
+================================================== */
+
+#services {
+    background-color: #faf7fc;
+
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.service-card {
+    background-color: white;
+
+    padding: 30px 25px;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+.service-card h3 {
+    color: #2b163d;
+
+    font-size: 22px;
+}
+
+.service-card p {
+    color: #666;
+}
+
+.service-card h4 {
+    color: #7a3f91;
+
+    font-size: 20px;
+
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   11. GALLERY
+================================================== */
+
+#gallery {
+    text-align: center;
+
+    background-color: white;
+}
+
+.gallery-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.gallery-item {
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background-color: #eee;
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s, filter 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+
+    filter: brightness(0.85);
+}
+
+
+/* ==================================================
+   12. CONTACT
+================================================== */
+
+#contact {
+    background-color: #faf7fc;
+
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 35px auto;
+}
+
+.contact-box {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+}
+
+.contact-box h3 {
+    color: #2b163d;
+}
+
+.contact-button {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 25px;
+
+    background-color: #2b163d;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   13. FOOTER
+================================================== */
+
+footer {
+    background-color: #2b163d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin-top: 0;
+
+    font-size: 24px;
+}
+
+footer p {
+    margin: 8px 0;
+
+    color: #ddd;
+}
+
+
+/* ==================================================
+   14. BACK TO TOP BUTTON
+================================================== */
+
+#backToTop {
+    display: none;
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #2b163d;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 2000;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#backToTop:hover {
+    transform: translateY(-4px);
+
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   15. RESPONSIVE / TABLET
+================================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 18px 5%;
+
+        gap: 15px;
+    }
+
+    nav h2 {
+        margin-right: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    #home {
+        padding: 60px 6%;
+
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+
+    .about-container {
+        gap: 35px;
+    }
+
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==================================================
+   16. RESPONSIVE / MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 15px 20px;
+
+        gap: 5px;
+    }
+
+    nav h2 {
+        margin: 0;
+    }
+
+
+    #menuBtn {
+    display: block;
+
+    background-color: transparent;
+    color: white;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+
+    nav a {
+        display: none;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 8px;
+
+        margin: 2px 0;
+    }
+
+
+    #home {
+        min-height: auto;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+
+    #appointmentForm {
+        text-align: left;
+
+        width: 100%;
+    }
+
+
+    section {
+        padding: 60px 6%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+
+    .about-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text ul {
+        text-align: left;
+    }
+
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #backToTop {
+        width: 45px;
+
+        height: 45px;
+
+        bottom: 20px;
+
+        right: 20px;
+
+        font-size: 21px;
+    }
+}
+
+
+/* ==================================================
+   17. SMALL MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+    nav h2 {
+        font-size: 21px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 31px;
+    }
+
+
+    .welcome {
+        font-size: 12px;
+    }
+
+
+    section {
+        padding: 50px 5%;
+    }
+
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+
+    .gallery-item img {
+        height: 230px;
+    }
+
+
+    #appointmentForm {
+        padding: 20px;
+    }
+
+
+    footer {
+        padding: 30px 15px;
+    }
+}
